@@ -37,9 +37,46 @@ header > .header-top {
     height: 60px;
 }
 
+header > .header-top > .header-top-logo > img {
+    margin: 15px 30px;
+}
+
+.header-top-search-query {
+    width: 80%;
+    margin-top: 10px;
+    padding: 1%;
+    border-radius: 20px;
+}
+
+.header-top-search-need-help {
+    color: #fff;
+    margin-left: 20px;
+}
+
+.header-top-login-container {
+    margin-top: 18px;
+    float: right;
+}
+
+.header-top-login-container > .header-top-login {
+    margin: 0 10px;
+    color: #fff;
+}
+
+.header-top-login-container > .header-top-register {
+    margin: 0 10px;
+    color: #fff;
+}
+
 header > .header-nav {
     height: 30px;
     background: #122238;
+    color: #fff;
+}
+
+header > .header-nav:hover {
+    color: #ccc;
+    cursor: pointer;
 }
 
 main > .car-search {
@@ -69,6 +106,22 @@ footer {
     margin: 2% 10%;
     background: #fff;
     border-radius: 10px;
+}
+
+.car-search > .car-search-form > .car-search-form-bottom {
+    background: #f5e8dc;
+}
+
+input, select {
+    display: inline-block;
+    width: 10em;
+}
+
+label {
+    display: inline-block;
+    width: 10em;
+    margin-right: .5em;
+    padding-top: 1.5em;
 }
 
 .advertisement-container {

@@ -20,15 +20,15 @@ export default function RootLayout({
                 <header>
                     <div className='row header-top'>
                         <div className='col-md-3 header-top-logo'>
-
+                            <img src='img/logo.svg' />
                         </div>
-                        <div className='col-md-6 header-top-search'>
+                        <div className='col-md-7 header-top-search'>
                             <form>
-                                <input type='text' placeholder='Search for vehicles by make, model, VIN, lot' />
-                                <span>Need Help?</span>
+                                <input type='text' className='header-top-search-query' placeholder='Search for vehicles by make, model, VIN, lot' />
+                                <span className='header-top-search-need-help'>Need Help?</span>
                             </form>
                         </div>
-                        <div className='col-md-3 header-top-login-container'>
+                        <div className='col-md-2 header-top-login-container'>
                             <span className='header-top-login'>
                                 Login
                             </span>
@@ -39,7 +39,7 @@ export default function RootLayout({
                     </div>
                     <div className='header-nav'>
                         <div className='header-nav-menu'>
-
+                            Home
                         </div>
                         <div className='header-nav-location'>
 

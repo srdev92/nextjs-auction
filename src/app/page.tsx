@@ -1,6 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
+const iconSizeClass = "fa-1x";
+
 export default function Home() {
     return (
         <main>
@@ -18,17 +20,17 @@ export default function Home() {
                         <div className="col-md-2 car-type">
                             <label className="form-label text-uppercase">
                                 MAKE
+                                <select className="car-type-list form-select">
+                                    <option>AMC</option>
+                                    <option>Acura</option>
+                                </select>
                             </label>
-                            <select className="car-type-list">
-                                <option>AMC</option>
-                                <option>Acura</option>
-                            </select>
                         </div>
                         <div className="col-md-2 car-model">
                             <label className="form-label text-uppercase">
                                 MODEL
                             </label>
-                            <select className="car-model-list">
+                            <select className="car-model-list form-select">
                                 <option>AMC</option>
                                 <option>Acura</option>
                             </select>
@@ -37,7 +39,7 @@ export default function Home() {
                             <label className="form-label text-uppercase">
                                 FROM YEAR
                             </label>
-                            <select className="from-year-list">
+                            <select className="from-year-list form-select">
                                 <option>1924</option>
                                 <option>2025</option>
                             </select>
@@ -46,21 +48,27 @@ export default function Home() {
                             <label className="form-label text-uppercase">
                                 TO YEAR
                             </label>
-                            <select className="to-year-list">
+                            <select className="to-year-list form-select">
                                 <option>1924</option>
                                 <option>2025</option>
                             </select>
                         </div>
                         <div className="col-md-2 car-search">
-                            <button><FontAwesomeIcon icon={faSearch} /> START SEARCH</button>
+                            <button className='btn btn-primary'>START SEARCH</button>
                         </div>
                     </div>
-                    <div className="car-search-form-bottom">
-                        <div className="buy-option">
-
+                    <div className="row car-search-form-bottom">
+                        <div className="col-md-4 buy-option">
+                            Buy it now
                         </div>
-                        <div className="access-company">
-
+                        <div className="col-md-6 buy-option">
+                            Get access to lots for sale at IAAI and Copart auctions
+                        </div>
+                        <div className="col-md-1 buy-option">
+                            <img src='img/copart.svg' />
+                        </div>
+                        <div className="col-md-1 buy-option">
+                            <img src='img/iaai.svg' />
                         </div>
                     </div>
                 </form>
