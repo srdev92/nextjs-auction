@@ -16,7 +16,41 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-            <body className={inter.className}>{children}</body>
+            <body className={inter.className}>
+                <header>
+                    <div className='row header-top'>
+                        <div className='col-md-3 header-top-logo'>
+
+                        </div>
+                        <div className='col-md-6 header-top-search'>
+                            <form>
+                                <input type='text' placeholder='Search for vehicles by make, model, VIN, lot' />
+                                <span>Need Help?</span>
+                            </form>
+                        </div>
+                        <div className='col-md-3 header-top-login-container'>
+                            <span className='header-top-login'>
+                                Login
+                            </span>
+                            <span className='header-top-register'>
+                                Register
+                            </span>
+                        </div>
+                    </div>
+                    <div className='header-nav'>
+                        <div className='header-nav-menu'>
+
+                        </div>
+                        <div className='header-nav-location'>
+
+                        </div>
+                    </div>
+                </header>
+                {children}
+                <footer>
+
+                </footer>
+            </body>
         </html>
     )
 }

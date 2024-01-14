@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import 'bootstrap/dist/css/bootstrap.css';
 
 :root {
     --foreground-rgb: 0, 0, 0;
@@ -16,6 +17,7 @@
     }
 }
 
+/*
 body {
     color: rgb(var(--foreground-rgb));
     background: linear-gradient(
@@ -24,4 +26,60 @@ body {
         rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+*/
+
+header {
+    background: #223957;
+}
+
+header > .header-top {
+    height: 60px;
+}
+
+header > .header-nav {
+    height: 30px;
+    background: #122238;
+}
+
+main > .car-search {
+    height: 300px;
+    background: #d2ccec;
+}
+
+footer {
+    height: 300px;
+    background: #000;
+}
+
+.car-search > .car-search-notice > h1 {
+    padding-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.car-search > .car-search-notice > h2 {
+    padding-top: 10px;
+    font-size: 16px;
+}
+
+.car-search > .car-search-form {
+    width: 80%;
+    height: 150px;
+    margin: 2% 10%;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.advertisement-container {
+    padding: 2%;
+}
+
+.advertisement-container > .advertisement-item {
+    padding: 2%;
+}
+
+.advertisement-container > .advertisement-item h1 {
+    font-size: 30px;
+    font-weight: bold;
 }
