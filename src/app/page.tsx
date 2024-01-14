@@ -3,7 +3,10 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 const iconSizeClass = "fa-1x";
 
-export default function Home() {
+export default async function Home() {
+    const response = await fetch("https://api.adviceslip.com/advice");
+    const data = await response.json();
+
     return (
         <main>
             <div className="car-search">
